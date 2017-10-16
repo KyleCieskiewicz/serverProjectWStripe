@@ -1,0 +1,89 @@
+<div>
+    
+    <form>
+        <div class="jumbotron text-center">
+            <h1>Greek Yogurt</h1>
+            <p>Yogurt that has been strained to remove its whey, resulting in a thicker consistency than unstrained yogurt, while preserving yogurt's distinctive, sour taste. Strained yogurt contains a higher protein density than regular yogurt.The protein in strained yogurt is largely casein protein.</p>
+            <input type="radio" ng-model="smoothieOrder.proteinBase" value="yogurt">Yogurt
+        </div>
+    
+
+        <div class="jumbotron text-center">
+            <h1>Whey Protein</h1>
+            <p>Our Natural Force® Organic Whey Protein is a clean alternative to conventional whey that is cold processed, has no artificial ingredients, and is sourced from 100% USDA Organic, grass-fed, free-range, American Humane Certified, heritage-breed Jersey cows.Most conventional whey protein powders are highly processed, have unnecessary additives, and are sourced from inhumane, factory farms.</p>
+            <input type="radio" ng-model="smoothieOrder.proteinBase" value="protein">Whey Protein
+        </div>
+    </form>
+
+
+    <form>
+        <div class="jumbotron text-center">
+            <h1>Kale</h1>
+            <p>Raw kale is composed of 84% water, 9% carbohydrates, 4% protein, and 1% fat (table). In a 100 gram serving, raw kale provides 49 calories. Like collards, it contains a large amount of vitamin K: several times the Daily Value (DV). It is a rich source (20% or more of the DV) of vitamin A, vitamin C, vitamin B6, folate, and manganese. Kale is a good source (10–19% DV) of thiamin, riboflavin, pantothenic acid, vitamin E and several dietary minerals, including iron, calcium, potassium, and phosphorus.</p>
+            <input type="radio" ng-model="smoothieOrder.vegetable" value="kale">Kale
+        </div>
+
+        <div class="jumbotron text-center">
+            <h1>Spinach</h1>
+            <p>Raw spinach is 91% water, 4% carbohydrates, 3% protein, and contains negligible fat. In a 100 g (3.5 oz) serving providing only 23 calories, spinach has a high nutritional value, especially when fresh, frozen, steamed, or quickly boiled. It is a rich source (20% or more of the Daily Value, DV) of vitamin A, vitamin C, vitamin K, magnesium, manganese, iron and folate (table). Spinach is a good source (10-19% of DV) of the B vitamins riboflavin and vitamin B6, vitamin E, calcium, potassium, and dietary fiber.</p>
+            <input type="radio" ng-model="smoothieOrder.vegetable" value="spinach">Spinach
+        </div>
+    </form>
+
+
+    <form>
+        <div class="jumbotron text-center">
+            <h1>Orange Banana</h1>
+            <p>It’s a good thing fruits aren’t claustrophobic, because we pack 3 mouth-watering oranges and 1⅓ bananas into every lip-smacking, nutrient-loaded bottle. How, you ask? Geometry. And a mallet. Why? So you can pack more into your day.</p>
+            <input type="radio" ng-model="smoothieOrder.fruit" value="orange">Orange Banana
+        </div>
+
+        <div class="jumbotron text-center">
+            <h1>Strawberry Kiwi</h1>
+            <p>It’s a good thing fruits aren’t claustrophobic, because we pack 22 mouth-watering strawberries and 3 kiwis into every lip-smacking, nutrient-loaded bottle. How, you ask? Geometry. And a mallet. Why? So you can pack more into your day.</p>
+            <input type="radio" ng-model="smoothieOrder.fruit" value="strawberry">Strawberry Apple Banana
+        </div>
+
+        <div class="jumbotron text-center">
+            <h1>Blueberry Apple</h1>
+            <p>Got the blues? Take a swig of this nutrient rich blueberry-apple flavored goodness and enjoy your ride on the happy train.</p>
+            <input type="radio" ng-model="smoothieOrder.fruit" value="apple">Blueberry Apple
+        </div>
+    </form>
+
+    <form>
+        <div class="jumbotron text-center">
+            <h1>Order quantity every two weeks</h1>
+            <input type="radio" ng-model="smoothieOrder.twoweeksorder" value="five" class="radioLabel">5
+            
+            <input type="radio" ng-model="smoothieOrder.twoweeksorder" value="ten" class="radioLabel">10
+            
+            <input type="radio" ng-model="smoothieOrder.twoweeksorder" value="fifteen" class="radioLabel">15
+        </div>
+    </form>
+
+
+
+    <form>
+        <div class="jumbotron text-center">
+            <h1>Smoothie size</h1>
+            <input type="radio" ng-model="smoothieOrder.size" value="twelveOz" class="radioLabel">12oz
+            <input type="radio" ng-model="smoothieOrder.size" value="twentyOz" class="radioLabel">20oz
+            <input type="radio" ng-model="smoothieOrder.size" value="thirtyOz" class="radioLabel">30oz
+        </div>
+    </form>
+
+    <!-- <form>
+        <div class="jumbotron text-center">
+                <label for="email">Email</label>
+                <input type="text" name="email" ng-model="smoothieOrder.email">
+        </div>
+    </form> -->
+
+    <div>
+        <a ui-sref="profile">
+            <button type="button" ng-click="next(smoothieOrder)" class="button">Next</button>
+        </a>
+    </div>
+
+</div>

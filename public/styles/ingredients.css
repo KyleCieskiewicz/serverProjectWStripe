@@ -1,0 +1,23 @@
+
+.ingredients-div {
+    margin: 5px;
+}
+
+.protein-ingredients div{display: inline-block}
+
+.vege-ingredients div{display: inline-block}
+
+.fruit-ingredients div{display: inline-block}
+
+.ingredients-portion {
+    width: 70%;
+    float: left;
+}
+
+.fruits-ingredients-portion {
+    height: 60%;
+}
+
+.fruits-facts {
+    width: 80%;
+}

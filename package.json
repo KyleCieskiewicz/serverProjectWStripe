@@ -1,0 +1,24 @@
+{
+  "name": "stripePractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular-load": "^0.5.0",
+    "angular-mm-foundation": "^0.7.0-SNAPSHOT",
+    "angular-payments": "^1.0.7",
+    "angular-spinner": "^1.0.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "massive": "^4.4.0",
+    "stripe": "^5.1.1"
+  }
+}

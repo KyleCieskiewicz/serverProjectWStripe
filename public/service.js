@@ -21,6 +21,19 @@ angular.module('smoothieApp').service('service', function($http){
     
         this.getAllUsers = function() {
            return $http.get('/api/users/');
+        },
+
+        this.getUserByEmail = function() {
+            return $http.get('/api/userbyemail');
+        }, 
+        
+        this.updateOrderInfo = function(updateInfo) {
+            // console.log(updateInfo);
+            return $http.put('/api/updateOrderInfo', updateInfo);
+        }, 
+
+        this.deleteUser = function(userId) {
+            return $http.delete('/api/deleteUser/' + userId);
         }
 
     });

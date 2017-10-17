@@ -1,0 +1,27 @@
+/* thead {color:green;}
+tbody {color:blue;}
+tfoot {color:red;} */
+
+table, th, td {
+    border: 1px solid black;
+    background-color: white;
+    white-space: nowrap;
+    padding: 10px;
+    
+}
+
+label {
+    float: left;
+    width: 150px;
+    text-align: left;
+    margin-right: 0.5em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+.form-field-no-caption {
+    margin-left: 150px;
+    padding-left: 0.5em;
+}

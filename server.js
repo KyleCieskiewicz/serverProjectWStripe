@@ -27,9 +27,12 @@ const massiveConnection = massive(connectionString)
 
 
 // app.get('/', serverController.stripeServer);
-app.post("/api/orders", serverController.addOrder);
 app.get("/api/orders", serverController.getAllOrders);
+app.get("/api/userbyemail", serverController.getUserByEmail);
 app.post("/api/users", serverController.addUser);
+app.post("/api/orders", serverController.addOrder);
+app.put('/api/updateOrderInfo', serverController.updateOrderInfo);
+app.delete("/api/deleteUser/:id", serverController.deleteUser);
 
 
 

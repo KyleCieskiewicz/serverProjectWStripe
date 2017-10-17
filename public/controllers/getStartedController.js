@@ -21,13 +21,13 @@ angular.module('smoothieApp').controller('getStartedController', function($scope
             // }
         };
     
-        service.getAllOrders().then(
-            function(response) {
+        // service.getAllOrders().then(
+        //     function(response) {
     
-                $scope.orders = response.data;
+        //         $scope.orders = response.data;
                 
-            }
-        );
+        //     }
+        // );
     
         $scope.toOrder = function(smoothieUser) {
                         

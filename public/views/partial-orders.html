@@ -1,0 +1,106 @@
+
+<!-- <div ng-repeat="order in orders">
+        
+         <tr>
+             <td>{{order.proteinbase}}</td>
+             <td>{{order.vegetable}}</td>
+             <td>{{order.fruit}}</td>
+             <td>{{order.size}}</td>
+             <td>{{order.twoweeksorder}}</td>
+         </tr>
+</div>
+<br>
+<br> -->
+
+<div class="jumbotron text-center">
+
+<table>
+<thead>
+        <tr>
+                <th>Protein</th>
+                <th>Vegetable</th>
+                <th>Fruit</th>
+                <th>Size</th>
+                <th>Weekly Order Amount</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Address</th>
+                <th>Email</th>
+        </tr>
+</thead>
+<!-- <div ng-repeat="info in user"> -->
+        <tbody>
+        <tr ng-repeat="info in user">
+                <td>
+                        {{info.proteinbase}}
+                </td>
+                <td>
+                        {{info.vegetable}}
+                </td>
+                <td>
+                        {{info.fruit}}
+                </td>
+                <td>
+                        {{info.size}}
+                </td>
+                <td>
+                        {{info.twoweeksorder}}
+                </td>
+                <td>
+                        {{info.firstname}}
+                </td>
+                <td>
+                        {{info.lastname}}
+                </td>
+                <td>
+                        {{info.address}}
+                </td>
+                <td>
+                        {{info.email}}
+                </td>
+                <td>
+                        <button ng-click="delete(info.id); reload()">Delete</button>
+                </td>
+                
+
+                <!-- <input type="text" ng-model="updateInfo.proteinbase"> -->
+                <!-- <input type="text" ng-model="updateInfo.vegetable"> -->
+                <!-- <input type="text" ng-model="updateInfo.fruit"> -->
+                <!-- <input type="text" ng-model="updateInfo.size">
+                <input type="text" ng-model="updateInfo.twoweeksorder">
+                <input type="text" ng-model="updateInfo.firstname">
+                <input type="text" ng-model="updateInfo.lastname">
+                <input type="text" ng-model="updateInfo.email">
+                <input type="text" ng-model="updateInfo.address"> -->
+
+                <!-- <button ng-click="update(updateInfo)">Update</button>
+                <button>Delete</button> -->
+                
+            </tr>
+        </tbody>
+
+<!-- </div> -->
+</table>
+
+<form>
+        <label>First Name:</label>
+         <input type="text" ng-model="updateInfo.firstname"><br>
+        <label>Last Name:</label>
+        <input type="text" ng-model="updateInfo.lastname"><br>
+        <label>Address:</label>
+         <input type="text" ng-model="updateInfo.address"><br>
+        <label>Email:</label>
+        <input type="text" ng-model="updateInfo.email"><br>
+
+<button ng-click="update(updateInfo); reload()">Update</button>
+
+</form>
+
+</div>
+      
+
+<form>
+        <a ui-sref="home">
+            <button type="button" ng-click="demo()" class="button">Home</button>
+        </a>
+</form>
